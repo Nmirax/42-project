@@ -6,20 +6,12 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 13:11:14 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/19 18:18:30 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/10/20 14:03:59 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-int ft_strlen(const char *s)
-{
-int i;
-i = 0;
-	
-	while(s[i] != '\0')
-		i++;
-	return (i);
-}	
+
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
 	unsigned int i;
