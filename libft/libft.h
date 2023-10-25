@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 17:38:29 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/24 14:11:32 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/10/25 11:20:28 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ char	*ft_strrchr(const char *s, int c);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char 	*ft_strnstr(const char *big, const char *little, size_t len);
+int ft_atoi(const char *nptr);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 
 
