@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 17:38:29 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/26 11:30:09 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/10/26 15:52:23 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,7 @@ void	*ft_calloc(size_t nmemb, size_t size);
 char *ft_strdup(const char *s);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strjoin(char const *s1, char const *s2);
+char *ft_strtrim(char const *s1, char const *set);
 
 
 
