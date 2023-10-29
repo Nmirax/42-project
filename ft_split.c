@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/29 10:27:01 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/29 11:51:26 by abakhaev         ###   ########.fr       */
+/*   Created: 2023/10/29 17:45:34 by abakhaev          #+#    #+#             */
+/*   Updated: 2023/10/29 17:46:36 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char **ft_split(char const *s,char c)
 			while (k >= 0)
 				free(tableau[k--]);
 			free(tableau);
-			return (NULL);
+return (NULL);
 		}
 		k++;
 	}
