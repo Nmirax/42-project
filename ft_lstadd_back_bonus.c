@@ -1,31 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 18:26:58 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/31 12:29:38 by abakhaev         ###   ########.fr       */
+/*   Created: 2023/10/31 12:58:31 by abakhaev          #+#    #+#             */
+/*   Updated: 2023/10/31 12:58:46 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t ft_strlen(const char *s)
-{
-int i;
-
-i = 0;
-	
-	while(s[i] != '\0')
-		i++;
-	return (i);
-}	
-
-/*
-int main(void)
-{
-	printf("%d",ft_strlen("Helloooo"));
-}
-*/

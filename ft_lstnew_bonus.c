@@ -1,31 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/16 18:26:58 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/31 12:29:38 by abakhaev         ###   ########.fr       */
+/*   Created: 2023/10/31 11:30:16 by abakhaev          #+#    #+#             */
+/*   Updated: 2023/10/31 11:32:09 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
+t_list	*ft_lstnew(void *content)
 {
-int i;
+	t_list	*new;
 
-i = 0;
-	
-	while(s[i] != '\0')
-		i++;
-	return (i);
-}	
-
-/*
-int main(void)
-{
-	printf("%d",ft_strlen("Helloooo"));
+	new = malloc(sizeof(t_list));
+	if (!new)
+		return (NULL);
+	new ->content = content;
+	new ->next = NULL;
+	return (new);
 }
-*/
