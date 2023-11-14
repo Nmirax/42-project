@@ -6,11 +6,12 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 13:59:41 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/21 14:32:49 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/14 19:07:05 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	while (n--)
@@ -22,5 +23,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-	

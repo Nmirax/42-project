@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 17:45:34 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/30 15:12:13 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/14 19:13:22 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	ft_count_words(char const *s, char c)
 	return (count);
 }
 
-static char **free_tab(char **tab, int k)
+static char	**free_tab(char **tab, int k)
 {
 	while (k-- > 0)
 		free(tab[k]);
@@ -39,22 +39,22 @@ static char **free_tab(char **tab, int k)
 	return (NULL);
 }
 
-static char **fill_tab(char const *s, char c, char **tab, int word_count)
+static char	**fill_tab(char const *s, char c, char **tab, int word_count)
 {
-	int	j; 
-	int i; 	
-	int k; 
+	int	j;
+	int	i;
+	int	k;
 
 	i = 0;
 	k = 0;
 	while (s[i] && k < word_count)
 	{
-		while(s[i] && s[i] == c)
+		while (s[i] && s[i] == c)
 			i++;
 		j = i;
 		while (s[i] && s[i] != c)
 			i++;
-		tab[k] = ft_substr(s, j, i -j);
+		tab[k] = ft_substr(s, j, i - j);
 		if (!tab[k])
 			return (free_tab(tab, k));
 		k++;
@@ -62,16 +62,16 @@ static char **fill_tab(char const *s, char c, char **tab, int word_count)
 	return (tab);
 }
 
-char **ft_split(char const *s,char c)
+char	**ft_split(char const *s, char c)
 {
-	char **tab; 
-	int word_count;
+	char	**tab;
+	int		word_count;
 
 	if (!s)
 		return (NULL);
 	word_count = ft_count_words(s, c);
 	tab = ft_calloc((word_count + 1), sizeof(char *));
 	if (!tab)
-		return(NULL);
-	return fill_tab(s, c, tab, word_count);
+		return (NULL);
+	return (fill_tab(s, c, tab, word_count));
 }

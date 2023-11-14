@@ -5,30 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 15:04:44 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/21 11:39:13 by abakhaev         ###   ########.fr       */
+/*   Created: 2023/11/14 19:52:57 by abakhaev          #+#    #+#             */
+/*   Updated: 2023/11/14 19:54:24 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    char    *result;
+	char	*result;
 
-    result = NULL;
-    while (*s != '\0')
-    {
-        if (*s == (char)c)
-            result = (char *)s;
-        s++;
-    }
-    if (*s == (char)c)
-        result = (char *)s;
-
-    return (result);
+	result = NULL;
+	while (*s != '\0')
+	{
+		if (*s == (char)c)
+			result = (char *)s;
+		s++;
+	}
+	if (*s == (char)c)
+		result = (char *)s;
+	return (result);
 }
-
 
 // int main()
 // {
@@ -38,11 +36,9 @@ char    *ft_strrchr(const char *s, int c)
 //     char *result = ft_strrchr(str, c);
 
 //     if (result != NULL)
-//         printf("Le caractere %c est trouve dans la chaine de caractere : %ld\n", c, result - str);
+//         printf("Le caractere %c est trouve  : %ld\n", c, result - str);
 //     else
 //         printf("Le caractere %c n'est pas trouve dans la chaine\n", c);
 
 //     return 0;
 // }
-
-	

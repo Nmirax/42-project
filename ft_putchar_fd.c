@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 16:16:18 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/30 16:18:21 by abakhaev         ###   ########.fr       */
+/*   Created: 2023/11/14 20:12:25 by abakhaev          #+#    #+#             */
+/*   Updated: 2023/11/14 20:12:41 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-	write(fd,&c,1);
+	write(fd, &c, 1);
 }

@@ -6,13 +6,13 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 12:54:02 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/18 13:56:36 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/14 18:42:22 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *str, size_t n)
+void	ft_bzero(void *str, size_t n)
 {
 	ft_memset(str, 0, n);
 }

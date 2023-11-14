@@ -6,19 +6,17 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:09:11 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/19 18:18:11 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/14 19:25:08 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-
-		if(c >= 65 && c <= 90)
-			c += 32;
+	if (c >= 65 && c <= 90)
+		c += 32;
 	return (c);
-	
 }
 
 // int main()

@@ -6,21 +6,19 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 14:35:00 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/31 15:06:00 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/14 19:00:33 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {	
-	
-	if(!lst)
+	if (!lst)
 		return ;
-	while(lst)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;
 	}
-	
 }

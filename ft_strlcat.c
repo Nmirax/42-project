@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 13:11:14 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/31 15:02:33 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/14 19:19:56 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	while (dest[i] && i < n)
@@ -44,5 +44,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 // printf("%zu\n",strlcat(a,b,size));
 // return 0;
 // }
-	
-
