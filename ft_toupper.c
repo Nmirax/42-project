@@ -6,24 +6,20 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 15:31:19 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/10/19 18:18:06 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:44:20 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-	
-	if(c >= 97 && c <= 122)
-			c -= 32;
+	if (c >= 97 && c <= 122)
+		c -= 32;
 	return (c);
-	
-
 }
 // int main()
 // {
 // 	printf("%c",ft_toupper('a'));
 // return 0;
 // 	}
-	

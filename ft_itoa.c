@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 17:48:30 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 20:21:29 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:50:54 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,8 @@ char	*ft_itoa(int n)
 
 	nbr = n;
 	len = ft_nbrlen(nbr);
-	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
 		return (NULL);
 	str[len] = '\0';
 	if (nbr < 0)

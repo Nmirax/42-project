@@ -6,17 +6,17 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 17:38:29 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 20:05:48 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/16 11:53:20 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+# include <unistd.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
 
 typedef struct s_list
 {
