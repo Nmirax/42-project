@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 18:26:58 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 19:20:46 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 11:43:16 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,4 @@ size_t	ft_strlen(const char *s)
 	while (s[i] != '\0')
 		i++;
 	return (i);
-}	
-
-/*
-int main(void)
-{
-	printf("%d",ft_strlen("Helloooo"));
 }
-*/

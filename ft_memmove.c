@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmovee.c                                      :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:36:01 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 19:38:39 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 11:42:03 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-//  int main(void)
-//  {	
-// 	unsigned char dest[] = "Hakunaq";
-// 	unsigned char src[] = "Mtattaq";
-//  	printf("%s", (char *)ft_memmove(dest,src,8));
-//  }

@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 16:20:45 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 19:11:06 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 11:37:48 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (!s)
+		return ;
 	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);

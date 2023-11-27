@@ -6,13 +6,13 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:54:44 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 20:15:28 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 11:44:01 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlens(const char *s)
+static size_t	ft_strlens(const char *s)
 {
 	int	i;
 
@@ -22,7 +22,7 @@ size_t	ft_strlens(const char *s)
 	return (i);
 }	
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+static char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
 
