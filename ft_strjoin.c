@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:44:36 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 20:10:22 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 09:30:22 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
 
+	i = 0;
 	while (src[i])
 	{
 		dest[i] = src[i];
