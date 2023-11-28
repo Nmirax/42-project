@@ -6,7 +6,7 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 16:53:32 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 18:42:28 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 11:40:53 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,3 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
-
-// int main(void)
-// {
-// 	printf("%d",ft_isalnum('q'));
-// }

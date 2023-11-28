@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstrr.c                                      :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:49:48 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/14 19:52:25 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 11:43:32 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,4 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		i++;
 	}
 	return (NULL);
-}	
-// int main() 
-// {
-//     printf("%s", ft_strnstr("Salut comment sa va", "comment", 4));
-//     return 0;
-// }
+}

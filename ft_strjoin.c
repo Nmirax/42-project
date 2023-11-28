@@ -6,27 +6,13 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:44:36 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/27 09:30:22 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 11:47:17 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
-
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i + 1] = src[i];
-	return (dest);
-}
-
-char	*ft_strcatt(char *dest, char *src)
+static char	*ft_strcatt(char *dest, char *src)
 {
 	int		i;
 	int		j;

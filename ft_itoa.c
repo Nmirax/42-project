@@ -6,13 +6,13 @@
 /*   By: abakhaev <abakhaev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 17:48:30 by abakhaev          #+#    #+#             */
-/*   Updated: 2023/11/16 11:50:54 by abakhaev         ###   ########.fr       */
+/*   Updated: 2023/11/27 11:41:23 by abakhaev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_nbrlen(int n)
+static int	ft_nbrlen(int n)
 {
 	int	len;
 
